@@ -22,8 +22,8 @@ $this->title = 'Insided Test';
                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                     ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                     fugiat nulla pariatur.</p>
-                <p><a class="btn btn-default" href="<? Yii::$app->runAction('controller/action'); ?>">Go to the thread &raquo;</a></p>
-                <a href="<?php echo Yii::$app->urlManager->createUrl("thread/index");?>">test</a>
+
+                <p><a class="btn btn-default" href="/thread.php">Go to the thread &raquo;</a></p>
             </div>
             <div class="col-lg-4">
                 <h2>Read the rest of the questions of the test</h2>

@@ -1,2 +1,29 @@
+<?php
+$this->title = $aThread->thread_name;
+?>
+<div class="site-index">
 
-thread vista
+    <div class="jumbotron">
+        <h1><?php echo $aThread->getThreadName()?></h1>
+
+        <p class="lead"><?php echo $aThread->getThreadComment()?></p>
+
+<?php use yii\helpers\Html ?>
+    </div>
+
+    <div class="body-content">
+
+	        <div class="row">
+	    	<?php $posts = $aThread->getPosts(); ?>
+    		<?php foreach ($posts as $aPost){ ?>
+	            <div class="col-lg-10" style="border-style: dotted; border-width:thin; border-color: #000000; margin: 1px">
+	                <h2><?php echo $aPost->getPostTitle() ?></h2>
+					<p><?php echo $aPost->getPostImageLink() ?></p>
+	                <?= Html::img('https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Singleton_UML_class_diagram.svg/440px-Singleton_UML_class_diagram.svg.png');?>
+	                <p><?php echo $aPost->getPostComment() ?></p>
+	                <!-- <p><a class="btn btn-default" href="<?php echo Yii::$app->urlManager->createUrl(array_merge(['thread/index'], ['threadId' => $aThread->getThreadId()]));?>">Go to the thread &raquo;</a></p> -->
+	            </div>
+	    	<?php } ?>
+	    </div>
+    </div>
+</div>

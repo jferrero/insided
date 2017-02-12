@@ -1,5 +1,5 @@
 <?php
-$this->title = $aForum->forum_name;
+$this->title = $aForum->getForumName();
 ?>
 <div class="site-index">
 
@@ -12,16 +12,16 @@ $this->title = $aForum->forum_name;
 
     <div class="body-content">
 
-    	<?php $threads = $aForum->getThreads();
-    		foreach ($threads as $aThread){ ?>
+    	<?php $threads = $aForum->getThreads(); ?>
 	        <div class="row">
-	            <div class="col-lg-10">
+    		<?php foreach ($threads as $aThread){ ?>
+	            <div class="col-lg-10" style="border-style: dotted; border-width:thin; border-color: #000000; margin: 1px">
 	                <h2><?php echo $aThread->getThreadName() ?></h2>
 
 	                <p><?php echo $aThread->getThreadComment() ?></p>
-	                <p><a class="btn btn-default" href="<?php echo Yii::$app->urlManager->createUrl('forum/index');?>">Go to the thread &raquo;</a></p>
+	                <p><a class="btn btn-default" href="<?php echo Yii::$app->urlManager->createUrl(array_merge(['thread/index'], ['threadId' => $aThread->getThreadId()]));?>">Go to the thread &raquo;</a></p>
 	            </div>
-	        </div>
-	    <?php } ?>
+	    	<?php } ?>
+	       	</div>
     </div>
 </div>

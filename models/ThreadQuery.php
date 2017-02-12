@@ -3,9 +3,9 @@
 namespace app\models;
 
 /**
- * This is the ActiveQuery class for [[Thread]].
+ * This is the ActiveQuery class for [[Post]].
  *
- * @see Thread
+ * @see Post
  */
 class ThreadQuery extends \yii\db\ActiveQuery
 {
@@ -16,7 +16,7 @@ class ThreadQuery extends \yii\db\ActiveQuery
 
     /**
      * @inheritdoc
-     * @return Thread[]|array
+     * @return Post[]|array
      */
     public function all($db = null)
     {
@@ -25,7 +25,7 @@ class ThreadQuery extends \yii\db\ActiveQuery
 
     /**
      * @inheritdoc
-     * @return Thread|array|null
+     * @return Post|array|null
      */
     public function one($db = null)
     {

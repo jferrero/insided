@@ -17,9 +17,13 @@ use Yii;
  * @property integer $thread_updated_by
  * @property string $thread_deleted_at
  * @property integer $thread_deleted_by
+ *
+ * user-defined, non-persitant attributes
+ * @property array posts
  */
 class Thread extends \yii\db\ActiveRecord
 {
+    protected $posts = array();
     /**
      * @inheritdoc
      */
@@ -72,11 +76,24 @@ class Thread extends \yii\db\ActiveRecord
 
     // getters y setters
 
+    public function getThreadId(){
+        return $this->thread_id;
+    }
+
     public function getThreadName(){
         return $this->thread_name;
     }
 
     public function getThreadComment(){
         return $this->thread_comment;
+    }
+
+    public function getPosts(){
+        return $this->posts;
+    }
+
+    public function setPosts (array $value){
+        $this->posts = $value;
+        return $this;
     }
 }

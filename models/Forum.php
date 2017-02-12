@@ -20,7 +20,7 @@ use Yii;
  */
 class Forum extends \yii\db\ActiveRecord
 {
-    public $forum_threads = array();
+    protected $forum_threads = array();
 
     /**
      * @inheritdoc

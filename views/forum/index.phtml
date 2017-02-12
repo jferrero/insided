@@ -1,0 +1,27 @@
+<?php
+$this->title = $aForum->forum_name;
+?>
+<div class="site-index">
+
+    <div class="jumbotron">
+        <h1><?php echo $aForum->getForumName()?></h1>
+
+        <p class="lead"><?php echo $aForum->getForumDescription()?></p>
+
+    </div>
+
+    <div class="body-content">
+
+    	<?php $threads = $aForum->getThreads();
+    		foreach ($threads as $aThread){ ?>
+	        <div class="row">
+	            <div class="col-lg-10">
+	                <h2><?php echo $aThread->getThreadName() ?></h2>
+
+	                <p><?php echo $aThread->getThreadComment() ?></p>
+	                <p><a class="btn btn-default" href="<?php echo Yii::$app->urlManager->createUrl('forum/index');?>">Go to the thread &raquo;</a></p>
+	            </div>
+	        </div>
+	    <?php } ?>
+    </div>
+</div>

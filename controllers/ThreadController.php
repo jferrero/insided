@@ -12,9 +12,6 @@ use app\models\ContactForm;
 class ThreadController extends \yii\web\Controller
 {
 
-    public function actionIndex()
-    {
-        return $this->render('index');
-    }
+
 
 }

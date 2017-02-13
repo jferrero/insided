@@ -122,4 +122,24 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
+    /**
+     * Displays Q&A Page
+     *
+     * @return string
+     */
+    public function actionQuestions()
+    {
+        return $this->render('questions');
+    }
+
+    /**
+     * Displays Q&A Page
+     *
+     * @return string
+     */
+    public function actionMiss()
+    {
+        return $this->render('miss');
+    }
 }

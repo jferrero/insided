@@ -15,34 +15,32 @@ $this->title = 'Insided Test';
     <div class="body-content">
 
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-5">
                 <h2>Go to the Main Forum</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
+                <p>This is where the app example is located. The code itself could be obtained from github. Specifically at <a href='https://github.com/jferrero/insided'> this page </a>. Also you may find other test made for an interview at the repo vwtests, which is also public.</p>
                 <p><a class="btn btn-default" href="<?php echo Yii::$app->urlManager->createUrl('forum/index');?>">Go to the Forum &raquo;</a></p>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-5">
                 <h2>Read the rest of the questions of the test</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
+                <p>Included within the application you may find the answers to the questions made in the PDF. I don't have it .docx format, but I can make a Word Document pretty quick if requested</p>
 
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
+                <p><a class="btn btn-default" href="<?php echo Yii::$app->urlManager->createUrl('site/questions');?>">Go to the Q&A &raquo;</a></p>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-5">
                 <h2>Take a look at the Doc</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
+                <p>There is an EAP File Contained within the documentation, but there is also an HTML file in case you dont have Enterprise Architect. The EAP file maybe be obtained <a href=''> here </a> and the HTML documentation may be seen <a href=''> here </a></p>
 
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
+                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Get The EAP From AWS-S3 &raquo;</a></p>
+            </div>
+            <div class="col-lg-5">
+                <h2>What will you miss?</h2>
+
+                <p>Find out what I miss from the test, basically for lack of time. Also there is some context to ease the evalution valoration.</a></p>
+
+                <p><a class="btn btn-default" href="<?php echo Yii::$app->urlManager->createUrl('site/miss');?>">See what's missing &raquo;</a></p>
             </div>
         </div>
 

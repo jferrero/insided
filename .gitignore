@@ -34,3 +34,4 @@ tests/_support/_generated
 
 # added by the developer
 config/db.php
+config/environment.php

@@ -12,7 +12,13 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'thread_id')->textInput() ?>
+<?php
+        $request = Yii::$app->request;
+        $get = $request->get();
+        $threadId = $get['1']['threadId'];
+    ?>
+
+    <?= $form->field($model, 'thread_id')->hiddenInput(['value'=> $threadId])->label(false); ?>
 
     <?= $form->field($model, 'post_title')->textInput(['maxlength' => true]) ?>
 
@@ -20,17 +26,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'post_image_link')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'post_created_at')->textInput() ?>
+    <?= $form->field($model, 'post_created_by')->hiddenInput(['value'=> 1])->label(false); ?>
 
-    <?= $form->field($model, 'post_created_by')->textInput() ?>
-
-    <?= $form->field($model, 'post_updated_at')->textInput() ?>
-
-    <?= $form->field($model, 'post_updated_by')->textInput() ?>
-
-    <?= $form->field($model, 'post_deleted_at')->textInput() ?>
-
-    <?= $form->field($model, 'post_deleted_by')->textInput() ?>
+    <?= $form->field($model, 'post_updated_by')->hiddenInput(['value'=> 1])->label(false); ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

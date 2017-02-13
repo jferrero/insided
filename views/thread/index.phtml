@@ -1,4 +1,6 @@
 <?php
+use yii\helpers\Url;
+
 $this->title = $aThread->thread_name;
 ?>
 <div class="site-index">
@@ -12,18 +14,19 @@ $this->title = $aThread->thread_name;
     </div>
 
     <div class="body-content">
-
+		<?php $urlparams = array('threadId' => $aThread->getThreadId()); ?>
+		<p><a class="btn btn-default" href="<?php echo $url = Url::toRoute(['post/create', $urlparams]);?>">Upload a pic! &raquo;</a></p>
 	        <div class="row">
 	    	<?php $posts = $aThread->getPosts(); ?>
     		<?php foreach ($posts as $aPost){ ?>
 	            <div class="col-lg-10" style="border-style: dotted; border-width:thin; border-color: #000000; margin: 1px">
 	                <h2><?php echo $aPost->getPostTitle() ?></h2>
-					<p><?php echo $aPost->getPostImageLink() ?></p>
-	                <?= Html::img('https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Singleton_UML_class_diagram.svg/440px-Singleton_UML_class_diagram.svg.png');?>
+	                <?= ($aPost->getPostImageLink()) ? Html::img($aPost->getPostImageLink()) : ""; ?>
 	                <p><?php echo $aPost->getPostComment() ?></p>
 	                <!-- <p><a class="btn btn-default" href="<?php echo Yii::$app->urlManager->createUrl(array_merge(['thread/index'], ['threadId' => $aThread->getThreadId()]));?>">Go to the thread &raquo;</a></p> -->
 	            </div>
 	    	<?php } ?>
 	    </div>
+
     </div>
 </div>

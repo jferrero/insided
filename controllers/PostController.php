@@ -48,10 +48,11 @@ class PostController extends \yii\web\Controller
      */
     public function actionCreate()
     {
+
         $model = new Post();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->post_id]);
+            return $this->redirect(['thread/index', 'threadId' => $model->thread_id]);
         } else {
             return $this->render('create', [
                 'model' => $model,

@@ -37,7 +37,7 @@ class Post extends \yii\db\ActiveRecord
         return [
             [['thread_id', 'post_created_by', 'post_updated_by', 'post_deleted_by'], 'integer'],
             [['post_created_at', 'post_updated_at', 'post_deleted_at'], 'safe'],
-            [['post_created_by', 'post_updated_by'], 'required'],
+            [['post_title'], 'required'],
             [['post_title'], 'string', 'max' => 200],
             [['post_comment'], 'string', 'max' => 1000],
             [['post_image_link'], 'string', 'max' => 500],
@@ -52,9 +52,9 @@ class Post extends \yii\db\ActiveRecord
         return [
             'post_id' => 'Post ID',
             'thread_id' => 'Thread ID',
-            'post_title' => 'main title',
-            'post_comment' => 'comment made during creation',
-            'post_image_link' => 'link to the main image',
+            'post_title' => 'Title',
+            'post_comment' => 'Comment',
+            'post_image_link' => 'Image Link',
             'post_created_at' => 'creation date',
             'post_created_by' => 'who created it',
             'post_updated_at' => 'last time was updated',
@@ -71,6 +71,12 @@ class Post extends \yii\db\ActiveRecord
     public static function find()
     {
         return new ThreadQuery(get_called_class());
+    }
+
+    public function save($runValidation = true, $attributeNames = NULL){
+
+        $this->post_created_at = date('Y-m-d h:i:s');
+        return parent::save($runValidation, $attributeNames);
     }
 
 // getters y setters

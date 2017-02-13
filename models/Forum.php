@@ -74,7 +74,7 @@ class Forum extends \yii\db\ActiveRecord
         // TODO: this line should not be here, but in a centralized location, if there is enough time, move it
         Yii::$classMap['\app\collections\ThreadCollection'] = 'collections/ThreadCollection';
 
-        $aThreadCollection = new \app\Collections\ThreadCollection;
+        $aThreadCollection = new \app\collections\ThreadCollection;
         $threads = $aThreadCollection->getThreadsOfForum($this->forum_id);
 
         $this->setForumThreads ($threads);

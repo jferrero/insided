@@ -20,8 +20,8 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="row">
             <div class="col-lg-10">
                 <p>
-                    <h2>6) Regarding training and knowledge increase</h2>
-                     
+                    <h2> Some missing stuff</h2>
+
                     <ul>
                         <li> I18N: No translations where applied. </li>
                         <li> User Auth: Altought included, just a plugin which also include database, this has not been done</li>
@@ -30,6 +30,20 @@ $this->params['breadcrumbs'][] = $this->title;
                         <li> Be able to answer a post directly intead of just adding a post to the end. Also be able to add a comment to a Post</li>
                         <li>A few pages miss the Breadcrumbs</li>
                         <li> Some styles were added on the go and so classes were incorrectly used </li>
+                    </ul>
+                </p>
+
+                <p>
+                    <h2> Some context </h2>
+
+                    <ul>
+                        <li> First time using Yii2 </li>
+                        <li> Not developing actively for a while </li>
+                        <li> Not using AWS for a while </li>
+                        <li> Did not create some CRUDS on purpose to show some more code </li>
+                        <li> Some of the comments and text were created on other devices, so could add more flavour there </li>
+                        <li> Sorry for the delay, forza mayor </li>
+
                     </ul>
                 </p>
 

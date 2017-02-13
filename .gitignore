@@ -28,3 +28,9 @@ phpunit.phar
 
 tests/_output/*
 tests/_support/_generated
+
+
+
+
+# added by the developer
+config/db.php

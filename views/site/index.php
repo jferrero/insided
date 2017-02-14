@@ -31,7 +31,7 @@ $this->title = 'Insided Test';
             <div class="col-lg-5">
                 <h2>Take a look at the Doc</h2>
 
-                <p>There is an EAP File Contained within the documentation, but there is also an HTML file in case you dont have Enterprise Architect. The EAP file maybe be obtained <a href='Doc/index.htms'> at AWS S3 </a> and the HTML documentation may be seen <a href="doc/index.htm"> here </a></p>
+                <p>There is an EAP File Contained within the documentation, but there is also an HTML file in case you dont have Enterprise Architect. The EAP file maybe be obtained <a href='Doc/index.htms'> at AWS S3 </a> and the HTML documentation may be seen <a href="doc/index.htm"> here </a> (beware: do NOT work in Chrome)</p>
 
                 <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Get The EAP From AWS-S3 &raquo;</a></p>
             </div>

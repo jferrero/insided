@@ -20,7 +20,7 @@ class ThreadCollection extends AbstractCollection
 
         $arraySearch = array('thread_id' => $threadId);
 
-        if ($searchDeleted){
+        if (!$searchDeleted){
             $arraySearch['thread_deleted_at'] = null;
         }
 
@@ -62,7 +62,7 @@ class ThreadCollection extends AbstractCollection
     {
         $arraySearch = array('forum_id' => $forumId);
 
-        if ($searchDeleted){
+        if (!$searchDeleted){
             $arraySearch['thread_deleted_at'] = null;
         }
 

@@ -1,0 +1,7 @@
+tocTab[tocTab.length] = new Array("0.2:1", "", "Use Case Diagram", "EARoot/EA2/EA25.htm", "180.png", "1", "0", "", "Use Case diagram0","{4C9F5811-1EF5-4a7f-B47A-B69C69E8A912}");
+tocTab[tocTab.length] = new Array("0.2:2", "", "Admin", "EARoot/EA2/EA31.htm", "6.png", "E47", "0", "", "Actor0","{D3AFF321-F48D-4652-A309-790E6ADB3521}");
+tocTab[tocTab.length] = new Array("0.2:3", "", "SUC 001 - View Thread", "EARoot/EA2/EA33.htm", "7.png", "E49", "0", "", "UseCase0","{0DB9CC03-7B6D-4587-8C96-192DAF0858A3}");
+tocTab[tocTab.length] = new Array("0.2:4", "", "SUC 002- Create a new Post", "EARoot/EA2/EA34.htm", "7.png", "E50", "0", "", "UseCase0","{6909276A-FB35-49dd-AD87-302B0150AF4C}");
+tocTab[tocTab.length] = new Array("0.2:5", "", "SUC 003 - Configure the Application", "EARoot/EA2/EA35.htm", "7.png", "E51", "0", "", "UseCase0","{999FDFDE-FE51-4c81-80F9-0059915988DD}");
+tocTab[tocTab.length] = new Array("0.2:6", "", "SUC 004 - Authenticate", "EARoot/EA2/EA36.htm", "7.png", "E52", "0", "", "UseCase0","{EDD72530-9FC5-4142-9F9C-B5F401705460}");
+tocTab[tocTab.length] = new Array("0.2:7", "", "User", "EARoot/EA2/EA37.htm", "6.png", "E46", "0", "", "Actor0","{07DE6F6F-A278-4afd-802D-5D3788909D90}");

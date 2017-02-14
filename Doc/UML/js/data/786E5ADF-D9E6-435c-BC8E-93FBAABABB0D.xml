@@ -1,0 +1,9 @@
+tocTab[tocTab.length] = new Array("0.3.2:1", "", "Controllers Diagram", "EARoot/EA3/EA2/EA50.htm", "175.png", "19", "0", "", "Logical diagram0","{0CFE2802-E153-40d5-9CCB-5525BE2B7B74}");
+tocTab[tocTab.length] = new Array("0.3.2:2", "", "ForumController", "EARoot/EA3/EA2/EA55.htm", "5.png", "E67", "0", "", "Class0","{72A3CAB2-F542-41f8-992E-D0ED16F62179}");
+tocTab[tocTab.length] = new Array("0.3.2:3", "", "Post", "EARoot/EA3/EA2/EA56.htm", "5.png", "E58", "0", "", "Class0","{DD3B731D-AA57-440f-AE28-78B752394F92}");
+tocTab[tocTab.length] = new Array("0.3.2:4", "", "«singleton» PostCollection", "EARoot/EA3/EA2/EA57.htm", "5.png", "E74", "0", "", "Class0","{6A4432B6-2B41-456b-87F7-6D51251D57FC}");
+tocTab[tocTab.length] = new Array("0.3.2:5", "", "PostController", "EARoot/EA3/EA2/EA58.htm", "5.png", "E69", "0", "", "Class0","{518F7411-9A3F-45f6-B02C-741B2AB87F3C}");
+tocTab[tocTab.length] = new Array("0.3.2:6", "", "Thread", "EARoot/EA3/EA2/EA59.htm", "5.png", "E60", "0", "", "Class0","{4AC254BD-9CA0-4bc5-A840-D68ECD8C873B}");
+tocTab[tocTab.length] = new Array("0.3.2:7", "", "«singleton» ThreadCollection", "EARoot/EA3/EA2/EA60.htm", "5.png", "E73", "0", "", "Class0","{4713BEB2-D4E0-4d9f-8F52-5422E3D31C45}");
+tocTab[tocTab.length] = new Array("0.3.2:8", "", "ThreadController", "EARoot/EA3/EA2/EA61.htm", "5.png", "E68", "0", "", "Class0","{2D41492B-D870-4894-BC6C-A27B361291B7}");
+tocTab[tocTab.length] = new Array("0.3.2:9", "", "User", "EARoot/EA3/EA2/EA62.htm", "5.png", "E59", "0", "", "Class0","{3A4FB73D-5EC4-4d10-BDB9-D37A1507C432}");

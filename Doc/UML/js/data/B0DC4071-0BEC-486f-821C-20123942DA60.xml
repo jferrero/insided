@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.3.1:1", "", "Main Class Diagram", "EARoot/EA3/EA1/EA41.htm", "175.png", "7", "0", "", "Logical diagram0","{9B8D529A-4CE6-4514-9C88-986B891B99DE}");
+tocTab[tocTab.length] = new Array("0.3.1:2", "", "«abstract» AbstractCollection", "EARoot/EA3/EA1/EA47.htm", "5.png", "E75", "0", "", "Class0","{8A377446-3806-464f-AEB3-4A3AEA2A88CC}");
+tocTab[tocTab.length] = new Array("0.3.1:3", "", "Forum", "EARoot/EA3/EA1/EA48.htm", "5.png", "E57", "0", "", "Class0","{B7A38AEC-2259-4f20-9FE6-FB6051B6260B}");
+tocTab[tocTab.length] = new Array("0.3.1:4", "", "«singleton» ForumCollection", "EARoot/EA3/EA1/EA49.htm", "5.png", "E70", "0", "", "Class0","{CC584DD7-3ADB-43d5-B0E2-29087A712AED}");

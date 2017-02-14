@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("0.1.2:1", "", "ShowThread", "EARoot/EA1/EA2/EA15.htm", "185.png", "20", "0", "", "Sequence diagram0","{B2C74F92-06EC-4213-9D60-EF4C6EE035A3}");
+tocTab[tocTab.length] = new Array("0.1.2:2", "", "aThread: Thread", "EARoot/EA1/EA2/EA20.htm", "57.png", "E82", "0", "", "Sequence0","{8771D317-4A42-4a43-8E5C-530FD44F7C5D}");
+tocTab[tocTab.length] = new Array("0.1.2:3", "", "aThreadController: ThreadController", "EARoot/EA1/EA2/EA21.htm", "57.png", "E79", "0", "", "Sequence0","{2851A102-02BF-403a-A200-D131F83549FF}");
+tocTab[tocTab.length] = new Array("0.1.2:4", "", "aUser: User", "EARoot/EA1/EA2/EA22.htm", "6.png", "E78", "0", "", "Actor0","{D20F1F3B-257B-4da7-A1A0-930A3EBC4CB3}");
+tocTab[tocTab.length] = new Array("0.1.2:5", "", "thePostCollection: PostCollection", "EARoot/EA1/EA2/EA23.htm", "57.png", "E81", "0", "", "Sequence0","{2FD48D0A-5A81-4e83-A19C-832D2E65645E}");
+tocTab[tocTab.length] = new Array("0.1.2:6", "", "theThreadCollection: ThreadCollection", "EARoot/EA1/EA2/EA24.htm", "57.png", "E80", "0", "", "Sequence0","{533CC3FB-F1A0-4a45-B2C6-FF433BFEBDF2}");

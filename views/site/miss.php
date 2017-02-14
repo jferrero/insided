@@ -47,7 +47,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <li> Did not create some CRUDS on purpose to show some more code </li>
                         <li> Some of the comments and text were created on other devices, so could add more flavour there </li>
                         <li> Sorry for the delay, forza mayor </li>
-
+                        <li> The UML Doc attached do not contemplate the whole picture, just covering the most important points for the evaluation</li>
                     </ul>
                 </p>
 

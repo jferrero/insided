@@ -1,2 +1,4 @@
+#Since is a forum, open up!
+
 User-agent: *
 Disallow:

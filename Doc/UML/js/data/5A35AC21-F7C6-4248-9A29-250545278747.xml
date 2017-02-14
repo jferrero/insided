@@ -1,0 +1,7 @@
+tocTab[tocTab.length] = new Array("0.1.1:1", "", "ShowForum", "EARoot/EA1/EA1/EA4.htm", "185.png", "18", "0", "", "Sequence diagram0","{AA11B798-61E2-4066-8CB0-1E847509F371}");
+tocTab[tocTab.length] = new Array("0.1.1:2", "", "aForum: Forum", "EARoot/EA1/EA1/EA9.htm", "57.png", "E65", "0", "", "Sequence0","{27CE66A0-D39B-4859-81BF-AD0A1A067778}");
+tocTab[tocTab.length] = new Array("0.1.1:3", "", "aUser: User", "EARoot/EA1/EA1/EA10.htm", "6.png", "E62", "0", "", "Actor0","{E3AB4A79-A8C6-41ee-B807-536552D15E68}");
+tocTab[tocTab.length] = new Array("0.1.1:4", "", "theForumCollection: ForumCollection", "EARoot/EA1/EA1/EA11.htm", "57.png", "E64", "0", "", "Sequence0","{8B2CADE0-91BC-45cc-ADB6-688B05E4DAE1}");
+tocTab[tocTab.length] = new Array("0.1.1:5", "", "theForumController: ForumController", "EARoot/EA1/EA1/EA12.htm", "57.png", "E63", "0", "", "Sequence0","{FE4285E5-2E1A-4751-A7DD-F9576FD72652}");
+tocTab[tocTab.length] = new Array("0.1.1:6", "", "theThreadCollection: ThreadCollection", "EARoot/EA1/EA1/EA13.htm", "57.png", "E72", "0", "", "Sequence0","{CAB3926F-F469-4eb3-8171-0628F76F14D0}");
+tocTab[tocTab.length] = new Array("0.1.1:7", "", "theThreadCollection", "EARoot/EA1/EA1/EA14.htm", "57.png", "E71", "0", "", "Sequence0","{D210BD65-BACC-4b7b-BF84-3238BA20FDFA}");

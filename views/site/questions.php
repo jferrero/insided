@@ -51,7 +51,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                     <h5>How I solve It:</h5>
 
-                    First I prove that technically I was capable to work toe to toe in Zend (which I did not knew at the time). Then the role of technical leader went step by step organically being set in place. After that we focused in human aspects and to get more interesting projects from Belgium. In this yearly evaluations we've received praises from the managment, internall clients, HR and also personnaly I received the maximum score any all evaluations, both technical and personal, from all my collegueas and from my responsable.
+                    First I prove that technically I was capable to work toe to toe in Zend (which I did not knew at the time). Then the role of technical leader went step by step organically being set in place. After that we focused in human aspects and to get more interesting projects from Belgium. In this yearly evaluations we've received praises from the managment, internall clients, HR. Recently I received the maximum score in all the evaluations, both technical and personal, from all my collegueas and from my responsable.
 
                 </p>
             </div>
@@ -108,14 +108,14 @@ $this->params['breadcrumbs'][] = $this->title;
                 <p style="margin: 20px">
                     <h4>No estimations:</h4>
 
-                    Altough not an intrisencal a forbidden part in the Agile world. Short term planifications out-of-the-blue just dont work. There is however a need in medium and high managment for obvious reason to have some degree of control and be able to forsee what will happen in the incoming months. The trick is to find the sweet spot.
+                    Altough not an intrisencal a forbidden part in the Agile world. Mid term planifications out-of-the-blue just dont work. There is however a need in medium and high managment for obvious reasons to have some degree of control and be able to forsee what will happen in the incoming months. The trick is to find the sweet spot.
 
                 </p>
 
                 <p style="margin: 20px">
                     <h4>Get business closer to IT:</h4>
 
-                    this is for me extremelly valuable, so much that I sustain this is a must regardeless you go agile or not.
+                    This is for me extremelly valuable, so much that I encourage this is a must regardeless you go agile or not.
 
                 </p>
 
@@ -145,14 +145,13 @@ $this->params['breadcrumbs'][] = $this->title;
                                 <li>Tries to rethink from the very basis what is and what could be the role of the companies in the society, how should broaden up the stakeholders view, partipicate in charity, how to go green and increase happiness of those around you. Around 8 hours.</li>
 
                             </ul>
-                        <li>And the most important thing of all, create mechanisms to avoid coding stuff that you will have to delete afterwards, whatever the reason. If it becouse specs changes, speak to the stakeholders and avoid the situation in the future. If becouse your code is not good enough, design more and code less and so on. This is vital to avoid monolithic disfunctional structures.</li>
-                        <li>A couple of PLuralsight Courses: Around 5-6 very short courses of an avg of 2 hours each, contemplating from basic domain for non technical people, how states participate activebly in ciber attack and defense.</li>
+                        <li>A couple of Pluralsight Courses: Around 5-6 very short courses of an avg of 2 hours each, contemplating from basic domain for non technical people, how states participate activebly in ciber attack and defense.</li>
                         <li>Arduino and Basic Electronis/Firmware: After a nice hackaton at Ostende about Arduino, a became an Arduino enthusisthic and did some funny stuff for a month or two. I promise myself to return to it</li>
                         <li>Additionally, assisted another Hackaton about SCRUM, assisted 1-2 Conferences in Malaga, and some organic stuff</li>
                     </ul>
                 </p>
 
-                <p> As for this year, well, I would like to broaden up in some technology aspects which were put in a second row this past year: including, but no limited to: caching, package balancing, more diagnose tools, I'm looking to a Design or Managment Degree, but financially could be problematic. Also some Arduino will be nice.
+                <p> As for this year, well, I would like to broaden up in some technology aspects which were put in a second row this past year: including, but no limited to: caching, package balancing, more diagnose tools, I'm looking to a Design or Managment Degree, but financially could be problematic. Also some Arduino will be nice. The php Certification of course will be a main thing this year.
 
             </div>
         </div>

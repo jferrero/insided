@@ -10,7 +10,10 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 
-
+/**
+ * Controller for the Post Domain
+ * no chances were made from the gii creation of CRUD
+ */
 class PostController extends \yii\web\Controller
 {
     

@@ -15,6 +15,7 @@ $this->title = $aForum->getForumName();
     	<?php $threads = $aForum->getThreads(); ?>
 	        <div class="row">
     		<?php foreach ($threads as $aThread){ ?>
+
 	            <div class="col-lg-10" style="border-style: dotted; border-width:thin; border-color: #000000; margin: 1px">
 	                <h2><?php echo $aThread->getThreadName() ?></h2>
 

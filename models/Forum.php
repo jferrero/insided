@@ -18,8 +18,12 @@ use Yii;
  * custom non-persistant attributes
  * @property array $forum_threads
  */
+
 class Forum extends \yii\db\ActiveRecord
 {
+    /**
+     * @var array
+     */
     protected $forum_threads = array();
 
     /**
@@ -69,17 +73,18 @@ class Forum extends \yii\db\ActiveRecord
         return new ForumQuery(get_called_class());
     }
 
+    /**
+     * return the corresponding threads for the Forum
+     * @return type
+     */
     public function getThreads(){
 
-        // TODO: this line should not be here, but in a centralized location, if there is enough time, move it
-        Yii::$classMap['\app\collections\ThreadCollection'] = 'collections/ThreadCollection';
-
         $aThreadCollection = new \app\collections\ThreadCollection;
-        $threads = $aThreadCollection->getThreadsOfForum($this->forum_id);
+        $arrayThreads = $aThreadCollection->getThreadsOfForum($this->forum_id);
 
-        $this->setForumThreads ($threads);
+        $this->setForumThreads ($arrayThreads);
 
-        return $threads;
+        return $arrayThreads;
     }
 
 

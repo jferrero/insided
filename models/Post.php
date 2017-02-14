@@ -19,6 +19,7 @@ use Yii;
  * @property string $post_deleted_at
  * @property integer $post_deleted_by
  */
+
 class Post extends \yii\db\ActiveRecord
 {
     /**
@@ -73,6 +74,12 @@ class Post extends \yii\db\ActiveRecord
         return new ThreadQuery(get_called_class());
     }
 
+    /**
+     * Basic Overriding of the save function to add some created_at functionality
+     * @param type|bool $runValidation 
+     * @param type|null $attributeNames 
+     * @return type
+     */
     public function save($runValidation = true, $attributeNames = NULL){
 
         $this->post_created_at = date('Y-m-d h:i:s');

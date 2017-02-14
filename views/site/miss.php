@@ -23,13 +23,16 @@ $this->params['breadcrumbs'][] = $this->title;
                     <h2> Some missing stuff</h2>
 
                     <ul>
+                        <li> Post Images should be treated as a file, also no validation were made</li>
                         <li> I18N: No translations where applied. </li>
                         <li> User Auth: Altought included, just a plugin which also include database, this has not been done</li>
                         <li> Url Beutification: Working on my local machine, sadly AWS is kicking. Pretty sure the problem will be at ModRewrite or another Apache Conf</li>
-                        <li>More Cruds: More Cruds could be done for Forums and Threads, and not just for Posts, altough is not included in the test. Certanly is not a lot of work</li>
+                        <li> More Cruds: More Cruds could be done for Forums and Threads, and not just for Posts, altough is not included in the test. Certanly is not a lot of work</li>
                         <li> Be able to answer a post directly intead of just adding a post to the end. Also be able to add a comment to a Post</li>
-                        <li>A few pages miss the Breadcrumbs</li>
+                        <li> A few pages miss the Breadcrumbs</li>
                         <li> Some styles were added on the go and so classes were incorrectly used </li>
+                        <li> most getters and setters were not coded</li>
+                        <li> Yii/Gii provided Model classes should not be coded, but an inheritance should be made to separate generated code from developers code</li>
                     </ul>
                 </p>
 
@@ -40,6 +43,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <li> First time using Yii2 </li>
                         <li> Not developing actively for a while </li>
                         <li> Not using AWS for a while </li>
+                        <li> For timing reason I foucs on Architecture and logic, leaving security, validations and graphic interface relegated</li>
                         <li> Did not create some CRUDS on purpose to show some more code </li>
                         <li> Some of the comments and text were created on other devices, so could add more flavour there </li>
                         <li> Sorry for the delay, forza mayor </li>

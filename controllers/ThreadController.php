@@ -9,26 +9,46 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 
+/**
+ * Controller for the Thread Controller
+ */
 class ThreadController extends \yii\web\Controller
 {
 
+	/**
+	 * Default action of the controller, return the Thread with the corresponding posts
+	 * Please refer to sequence diagram ShowThread to more Info
+	 * @param type $threadId 
+	 * @return aThread|false (rendered)
+	 */
 	public function actionIndex($threadId){
 
-        // TODO: this line should not be here, but in a centrlized location, if there is enough time, move it
-		Yii::$classMap['\app\collections\ThreadCollection'] = 'collections/ThreadCollection';
+		try{
 
-		$aThread = \app\models\Thread::find()
-            ->where(array('thread_id' => $threadId, 'thread_deleted_at' => null))
-            ->one();
+			// get the thread
+			$theThreadCollection = \app\collections\ThreadCollection::getInstance();
+			$aThread = $theThreadCollection->getThreadWithPosts($threadId, $searchDeleted = null);
 
-		$thePostCollection = new \app\collections\PostCollection;
-		$aPostArray = $thePostCollection->getPostsFromThread($threadId);
+			if ($aThread instanceof \app\models\Thread){
+		        return $this->render('index.phtml', array ('aThread' => $aThread));
+			}else{
+				// altough not necessary an error/exception, for timing reason a exception will be triggered
+				// the thread has not been found
 
-		// TODO, if null...
-		$aThread->setPosts($aPostArray);
-        
-        return $this->render('index.phtml', array ('aThread' => $aThread));
+				throw new \Exception("thread not found");
+				
+			}
+
+	        
+        }catch(\Exception $e){
+            // Here's a nice pace to put a message and a redirect to the main page specifyng the error
+            // if you want to treat the back as an API then a tipifed meesage should be wrapped and sent back with the proper http status
+            $message = $e->getMessage();
+            $name = "Error";
+
+            // different actions could be performed here, like logging the error on a file
+
+            $this->render("/site/error", array('name' => $name , 'message' => $message)); // more sofisticated error handling will be welcome idd
+        }
 	}
-
-
 }
